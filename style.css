@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=REM:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f573;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0 5%;
+    display: flex;
+}
+#img-0{
+    width: 700px;
+    margin-bottom: 40px;
+}
+#img-01{
+    width: 700px;
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+/** Social Icons **/
+.social{
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+.social img{
+    cursor: pointer;
+    width: 45px;
+    transition: .2s ease-out;
+}
+.social img:hover{
+    width: 58px;
+}
+/** Main (TEXTS) **/
+main h1{
+    max-width: 700px;
+    font-size: 6rem;
+    margin-top: 200px;
+    text-transform: capitalize;
+    color: #e2a672;
+}
+.titulo-principal:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+main h2{
+    color: #595959;
+}
+
+/** Button **/
+button{
+    width: 160px;
+    height: 45px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #e2a672;
+    border: none;
+    margin: 25px 0px;
+    transition: .6s ease 
+}
+button:hover{
+background-color: #fa6482;
+border-radius: 10px;
+}
+/** Find me  **/
+.find-me{
+    margin: 180px 0px;
+}
+.texto p{
+    font-size: 1.2rem;
+    color: #595959;
+}
+.texto a{
+    color: #fa6482;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-mobile{
+    display: none;
+}
